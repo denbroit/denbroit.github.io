@@ -1,176 +1,71 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-	<title>Highway to Continuous Integration</title>
+	<title>Denis Trifonov</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=792, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen.css">
-	<link href='//fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/uikit.min.css">
+	<link href='//fonts.googleapis.com/css?family=Roboto+Slab&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link href='//fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<style>
-		.caption h1, .slide h2 {
-			font-family: 'Roboto Condensed', 'PT Sans Narrow', sans-serif;
+		body {
+			background: url(img/background.jpg) 50% no-repeat fixed; background-size: cover;
+			color: #fff;
+		}
+		p a {
+			color: #fff;
+			text-decoration: underline;
+		}
+		h2, h3 {
+			font-family: 'Roboto Condensed', sans-serif;
+			color: #fff;
 		}
 		p {
-			font-family: 'Roboto', 'PT Sans', sans-serif;
+			font-family: 'Roboto Slab', sans-serif;
+		}
+		.main {
+			background-color: rgba(0,0,0,0.66);
+		}
+		.uk-icon-button {
+			background: none;
+			border: 1px #fff solid;
+			color: #fff;
+		}
+		a:hover, .uk-icon-button:hover {
+			color: #0077dd;
 		}
 	</style>
 </head>
-<body class="list">
-	<header class="caption">
-		<h1>Highway to Continuous Integration</h1>
-		<p><a href="">Denis Trifonov</a>, <a href="">2GIS</a></p>
-	</header>
-	<section class="slide"><div>
-		<h2>Highway to Continuous Integration</h2>
-		<p><a href="">Denis Trifonov</a>, <a href="">2GIS</a></p>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Обо мне</h2>
-		<p>Занимаюсь задачами внедрения Continuous Integration и Continuous Delivery в Web API, автоматизацией для разработки, функционального и нагрузочного тестирования.</p>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Проблема</h2>
-		<p>Должен быть рабочий код.</p>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Continuous Integration</h2>
-		<p>Описание</p>
-		<p>Все должно быть автоматизировано.</p>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Continuous Delivery, ссылка на доклад</h2>
-	</div></section>
-	<section class="slide"><div>
-		<h2>2GIS Web API</h2>
-		<p>v. 1.3 & 2.0, Yii Framework (PHP), Chef configuring & deployment</p>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Автотесты</h2>
-		<p>Unit-tests, functional test on Own Framework (PHP), v. 1.3 & 2.0, Chef configuring & deployment</p>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Рабочий код</h2>
-		<p>Без дефектов, рабочий под нагрузкой.</p>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Код без дефектов</h2>
-		<p>Выявлять как можно ранее, быстро устранять, следить за системой.</p>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Git Flow, разрабатываем все задачи и тесты в ветке, стабильный мастер</h2>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Интеграционная сборка</h2>
-		<p>Новая функциональность реализована без дефектов.</p>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Задачи</h2>
-		<ul>
-			<li>Обновление окружения</li>
-			<li>Выполнение тестов</li>
-			<li>Слияние веток</li>
-		</ul>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Готовые решения</h2>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Обновление окружения</h2>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Параллельное выполнение с помощью Paratest</h2>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Вливание задачи и тестов в мастер</h2>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Интеграция с Jira</h2>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Регрессионная сборка</h2>
-		<p>Нет дефектов после мержа, стабильный мастер.</p>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Задачи</h2>
-		<ul>
-			<li>Обновление окружения</li>
-			<li>Выполнение тестов</li>
-		</ul>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Разворачивание машины в облаке</h2>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Разделение тестов и приложений на разные сервера</h2>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Одна сборка, несколько окружений</h2>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Откат к предыдущему состоянию</h2>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Обновление до свежего stable</h2>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Интеграция с Jira</h2>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Код работает под нагрузкой</h2>
-		<p>Код работает под нагрузкой, производительность не пострадала.</p>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Задачи</h2>
-		<ul>
-			<li>Подготовить логи</li>
-			<li>Выполнение нагрузки</li>
-			<li>Анализ и сохранение результатов</li>
-			<li>Решение</li>
-		</ul>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Готовые решения</h2>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Подготовка свежих логов для нагрузки из Elastic Search</h2>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Автоматизация и параметризация запуска</h2>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Мониторинг времени ответа</h2>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Построение графиков из Graphite</h2>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Публикация и хранение отчетов в Jenkins</h2>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Итого: полный путь кода</h2>
-		<ol>
-			<li>Задача в ветке, тесты OK &mdash; сливаем</li>
-			<li>Мастер без дефектов &mdash; RC, staging</li>
-			<li>Производительность не упала &mdash; production</li>
-		</ol>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Выводы</h2>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Благодарю за внимание!</h2>
-		<p>
-			Highway to Continuous Integration<br>
-			<a href="https://dentrifonov.github.io">dentrifonov.github.io</a>
-		</p>
-		<p>
-			Денис Трифонов, Специалист по тестированию ПО, 2GIS<br>
-			de.trifonov@2gis.ru
-		</p>
-	</div></section>
-	<div class="progress"><div></div></div>
-	<script src="node_modules/shower-core/shower.min.js"></script>
+<body>
+	<div class="main uk-height-viewport">
+		<div class="uk-container uk-container-center">
+			<div class="uk-grid">
+				<div class="uk-width-1-1 uk-margin-large-top">
+					<h2 class="uk-heading-large">About</h2>
+					<p><b>Denis Trifonov<br>Novosibirsk, Russia</b></p>
+					<p>Drummer, sound engineer, composer, web-developer. QA Engineer at 2GIS.</p>
+				</div>
+				<div class="uk-width-1-1 uk-margin-large-top">
+					<h2 class="uk-heading-large">Publications</h2>
+					<h3>Highway to Continuous Integration, HighLoad++ Conf 2014</h3>
+					<p>
+						Link to abstracts: <a href="http://www.highload.ru/2014/abstracts/1608.html">highload.ru/2014/abstracts/1608.html</a><br>
+						Link to presentation: <a href="https://dentrifonov.github.io/highway-to-ci/">dentrifonov.github.io/highway-to-ci</a>
+					</p>
+				</div>
+				<div class="uk-width-1-1 uk-margin-large-top">
+					<h2 class="uk-heading-large">Social Profiles</h2>
+					<a href="https://www.facebook.com/dentrifonov" class="uk-icon-button uk-icon-facebook"></a>
+					<a href="https://vk.com/dentrifonov" class="uk-icon-button uk-icon-vk"></a>
+					<a href="https://twitter.com/dentrifonov" class="uk-icon-button uk-icon-twitter"></a>
+					<a href="http://instagram.com/destrifonov/" class="uk-icon-button uk-icon-instagram"></a>
+					<a href="https://steamcommunity.com/id/dentrifonov" class="uk-icon-button uk-icon-steam"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/uikit.min.js"></script>
 </body>
 </html>
